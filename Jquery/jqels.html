@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jq.js"></script>
+</head>
+<body>
+    <img src="https://www.pixsy.com/wp-content/uploads/2021/04/edi-libedinsky-1bhp9zBPHVE-unsplash-1-1536x1024.jpeg" alt="" id="img1">
+    <button id="b1">Show Image</button>
+    <button id="b2">Hide Image</button>
+    <button id="b3">Toggle Image</button>
+    
+    <button id="bt1">Slide Up</button>
+    <button id="bt2">Slide Down</button>
+    <button id="bt3">Toggle Image</button>
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#b1").click(function(){
+            $("#img1").fadeIn(500);
+        });
+        $("#b2").click(function(){
+            $("#img1").fadeOut();
+        });
+        $("#b3").click(function(){
+            $("#img1").fadeToggle();
+        });
+    });
+
+   
+    
+    
+    $(document).ready(function() {
+        $("#bt1").click(function(){
+            $("#img1").slideUp(500);
+        });
+        $("#bt2").click(function(){
+            $("#img1").slideDown();
+        });
+        $("#bt3").click(function(){
+            $("#img1").slideToggle();
+        });
+    });
+    
+</body>
+</html>
